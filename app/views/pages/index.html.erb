@@ -1,0 +1,14 @@
+<h1>Houses</h1>
+<div class="row">
+      <% @characters.each do |character| %>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= character.house %></h5>
+            <p class="card-text"><%= character.name %></p>
+            <p class="card-text"><%= character.house %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+</div>
